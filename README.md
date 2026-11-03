@@ -36,6 +36,8 @@ Each example searches Google Books for “artificial intelligence” and prints 
 
 ### curl integration
 
+Send the request with curl, which prints the full JSON response:
+
 ```bash
 curl --get https://serpapi.com/search \
  --data-urlencode engine="google_books" \
@@ -245,7 +247,10 @@ Failed requests return an HTTP error status and a JSON body with an `error` mess
 
 ## Output formats: JSON and Markdown
 
-Choose structured JSON for applications or Markdown for LLMs and AI agents. JSON is the default output and is useful when you need individual result fields. Add `output=md` to receive Markdown instead, which is more token-efficient.
+Choose structured JSON for applications or Markdown for LLMs and AI agents:
+
+- JSON is the default output and is useful when you need individual result fields.
+- Add `output=md` to receive Markdown instead, which is more token-efficient.
 
 Markdown is plain text, not JSON: YAML front matter with the search metadata, followed by tables of the results and links to the next pages. Read the response body as text instead of parsing it.
 
@@ -311,6 +316,8 @@ Google Books returns up to 10 results per page. To get the next page, increase `
 
 ### Organic results
 
+Each result in `organic_results` can include these fields:
+
 ```json
 {
   "organic_results": [
@@ -341,6 +348,8 @@ Google Books returns up to 10 results per page. To get the next page, increase `
 ```
 
 ### Search information and pagination
+
+`search_information` describes the search, and `serpapi_pagination` links to the other pages:
 
 ```json
 {
