@@ -1,6 +1,8 @@
+[![Google Books API results in the SerpApi Playground](images/playground.png)](https://serpapi.com/playground?engine=google_books&q=artificial+intelligence&utm_source=github_google_books_scraper)
+
 # Google Books Scraper
 
-Scrape Google Books with a simple API. Search books, magazines, and scanned newspapers, and get each result's title, link, Google Books ID, thumbnail, authors, publication date, snippet, availability, and other editions.
+Scrape Google Books with SerpApi's Google Books API. Search books, magazines, and scanned newspapers, and get each result's title, link, Google Books ID, thumbnail, authors, publication date, snippet, availability, and other editions.
 
 Choose structured JSON for applications or Markdown for LLMs and AI agents.
 
@@ -19,8 +21,6 @@ https://serpapi.com/search?engine=google_books&q=artificial+intelligence&api_key
 - `start` skips results for pagination. Each page has up to 10 results.
 
 [Register at SerpApi](https://serpapi.com?utm_source=github_google_books_scraper) to get your API key, and keep it private. Try the request live in the [SerpApi Playground](https://serpapi.com/playground?engine=google_books&q=artificial+intelligence&utm_source=github_google_books_scraper).
-
-[![Google Books API results in the SerpApi Playground](images/playground.png)](https://serpapi.com/playground?engine=google_books&q=artificial+intelligence&utm_source=github_google_books_scraper)
 
 ## Code examples
 
