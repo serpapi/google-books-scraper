@@ -11,6 +11,7 @@ https://serpapi.com/search?engine=google_books&q=artificial+intelligence&api_key
 ```
 
 - `q` is the search query: a title, an author, a subject, or a quote. Search operators such as `intitle:`, `inauthor:`, `inpublisher:`, `subject:`, and `isbn:` work too.
+- `api_key` is your SerpApi API key. Replace `SERPAPI_API_KEY` with it.
 - `document_type` limits the results to `books`, `magazines`, or `newspapers` from the Google News Archive.
 - `view` only shows books with a `preview` or a `full` view.
 - `start_date` and `end_date` limit the results to a publication period, in `YYYYMMDD` format.
