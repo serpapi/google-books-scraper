@@ -20,6 +20,8 @@ https://serpapi.com/search?engine=google_books&q=artificial+intelligence&api_key
 
 [Register at SerpApi](https://serpapi.com?utm_source=github_google_books_scraper) to get your API key, and keep it private. Try the request live in the [SerpApi Playground](https://serpapi.com/playground?engine=google_books&q=artificial+intelligence&utm_source=github_google_books_scraper).
 
+[![Google Books API results in the SerpApi Playground](images/playground.png)](https://serpapi.com/playground?engine=google_books&q=artificial+intelligence&utm_source=github_google_books_scraper)
+
 ## Code examples
 
 The code examples read your API key from the `SERPAPI_API_KEY` environment variable:
