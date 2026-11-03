@@ -1,10 +1,6 @@
-[![Google Books API results in the SerpApi Playground](images/playground.png)](https://serpapi.com/playground?engine=google_books&q=artificial+intelligence&utm_source=github_google_books_scraper)
-
 # Google Books Scraper
 
 Scrape Google Books with SerpApi's Google Books API. Search books, magazines, and scanned newspapers, and get each result's title, link, Google Books ID, thumbnail, authors, publication date, snippet, availability, and other editions.
-
-Choose structured JSON for applications or Markdown for LLMs and AI agents.
 
 ## How to scrape Google Books
 
@@ -20,7 +16,13 @@ https://serpapi.com/search?engine=google_books&q=artificial+intelligence&api_key
 - `start_date` and `end_date` limit the results to a publication period, in `YYYYMMDD` format.
 - `start` skips results for pagination. Each page has up to 10 results.
 
-[Register at SerpApi](https://serpapi.com?utm_source=github_google_books_scraper) to get your API key, and keep it private. Try the request live in the [SerpApi Playground](https://serpapi.com/playground?engine=google_books&q=artificial+intelligence&utm_source=github_google_books_scraper).
+[Register at SerpApi](https://serpapi.com?utm_source=github_google_books_scraper) to get your API key, and keep it private.
+
+### Playground
+
+Try the request live in the [SerpApi Playground](https://serpapi.com/playground?engine=google_books&q=artificial+intelligence&utm_source=github_google_books_scraper).
+
+[![Google Books API results in the SerpApi Playground](images/playground.png)](https://serpapi.com/playground?engine=google_books&q=artificial+intelligence&utm_source=github_google_books_scraper)
 
 ## Code examples
 
@@ -243,7 +245,7 @@ Failed requests return an HTTP error status and a JSON body with an `error` mess
 
 ## Output formats: JSON and Markdown
 
-JSON is the default output and is useful when you need individual result fields. Add `output=md` to receive Markdown instead. It's more token-efficient, which makes it a good fit for LLMs and AI agents.
+Choose structured JSON for applications or Markdown for LLMs and AI agents. JSON is the default output and is useful when you need individual result fields. Add `output=md` to receive Markdown instead, which is more token-efficient.
 
 Markdown is plain text, not JSON: YAML front matter with the search metadata, followed by tables of the results and links to the next pages. Read the response body as text instead of parsing it.
 
