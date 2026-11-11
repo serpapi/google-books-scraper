@@ -398,7 +398,7 @@ Other MCP clients:
 }
 ```
 
-The server's engine catalog doesn't include Google Books, but its `search` tool passes any engine through to SerpApi. Ask your agent to use the `google_books` engine with `q`. The resulting tool call looks like this:
+The server's engine catalog includes the `google_books` engine, and its `serpapi://engines/google_books` resource describes the parameters. Ask your agent to use the `google_books` engine with `q`. The resulting tool call looks like this:
 
 ```json
 {
