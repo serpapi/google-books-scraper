@@ -442,7 +442,7 @@ Use SerpApi APIs without writing code:
 
 ## Use cases
 
-- Build book search and discovery features with titles, authors, covers, and publication dates.
+- Build book search and discovery features with titles, authors, and publication dates, linking to Google Books.
 - Look up books by ISBN, author, or publisher with search operators.
 - Find which books quote a phrase, and on which page.
 - Research historical events in the scanned newspapers of the Google News Archive.
